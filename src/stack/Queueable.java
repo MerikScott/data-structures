@@ -1,7 +1,7 @@
 package stack;
 
 public interface Queueable {
-    boolean empty();
+    boolean isEmpty();
     boolean add(int e);
     int poll();
     int peek();

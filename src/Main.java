@@ -1,14 +1,111 @@
-import stack.ArrayQueue;
-import stack.ArrayStack;
-import stack.Element;
-import stack.MyList;
+import stack.*;
 
 import java.util.Iterator;
 
 public class Main {
 
     public static void main(String[] args) {
+        Integer[] stackMain = new Integer[8];
+        Integer[] stackAuxiliary = new Integer[8];
+        StackQueue stackQueue = new StackQueue(stackMain, stackAuxiliary);
+        stackQueue.add(10);
 
+        System.out.println(stackQueue.toString());
+        stackQueue.add(20);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(30);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(40);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(50);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(60);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(70);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(80);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(90);
+        System.out.println(stackQueue.toString());
+
+        System.out.println("Queue front is: " + stackQueue.peek());
+        System.out.println("I took front element: " + stackQueue.poll());
+        System.out.println(stackQueue.toString());
+
+        System.out.println("I took front element: " + stackQueue.poll());
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(90);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(100);
+        System.out.println(stackQueue.toString());
+
+        stackQueue.add(110);
+        System.out.println(stackQueue.toString());
+    }
+}
+
+
+
+        /* - - - - - - - - - - - - - - - -
+        // array queue starts here
+
+        ArrayQueue arrayQueue = new ArrayQueue(8);
+
+        System.out.println("Array is empty: " + arrayQueue.isEmpty());
+        System.out.println("Adding element");
+        arrayQueue.add(10);
+        System.out.println("Array is empty: " + arrayQueue.isEmpty());
+        System.out.println("Adding element");
+        arrayQueue.add(20);
+        System.out.println("At the front of the queue is " + arrayQueue.peek());
+        System.out.println("I just took element " + arrayQueue.poll() + " from the queue ");
+        System.out.println("At the front of the queue is " + arrayQueue.peek());
+        System.out.println("Adding element");
+        arrayQueue.add(20);
+        System.out.println(arrayQueue.toString());
+        System.out.println("Adding element");
+        arrayQueue.add(30);
+        System.out.println(arrayQueue.toString());
+
+        System.out.println("Adding element");
+        arrayQueue.add(40);
+        System.out.println(arrayQueue.toString());
+
+        System.out.println("Adding element");
+        arrayQueue.add(50);
+        System.out.println(arrayQueue.toString());
+
+        System.out.println("Adding element");
+        arrayQueue.add(60);
+        System.out.println(arrayQueue.toString());
+
+        System.out.println("Adding element");
+        arrayQueue.add(70);
+        System.out.println(arrayQueue.toString());
+
+        System.out.println("Adding element");
+        arrayQueue.add(80);
+        System.out.println(arrayQueue.toString());
+
+        System.out.println("Adding element");
+        arrayQueue.add(90);
+        System.out.println(arrayQueue.toString());
+
+    }
+}
+// arrayQueue ends here
+*/
+
+/*
         MyList myList = new MyList();
 
         System.out.println("List is empty = " + myList.empty());
@@ -32,7 +129,7 @@ public class Main {
         System.out.println("value of last is " + myList.last());
         System.out.println("value of first is " + myList.first());
 
-        Iterator iterator = myList.iterator();
+       Iterator iterator = myList.iterator();
         while (iterator.hasNext()) {
             Integer i = (Integer)iterator.next();
             System.out.println(i);
@@ -50,7 +147,7 @@ public class Main {
     }
 }
 
-
+*/
 
 
 /*

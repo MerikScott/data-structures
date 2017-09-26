@@ -7,16 +7,16 @@ public class Main {
     public static void main(String[] args) {
         int[][] tab = new int[7][3];
 
-/*        for (int i=6; i==0; i--) {
+        for (int i=6; i==0; i--) {
             tab[i][0] = i;
-        }*/
-/*        tab[0][0] = 3;
+        }
+        tab[0][0] = 3;
         tab[1][0] = 1;
         tab[2][0] = 5;
         tab[3][0] = 0;
         tab[4][0] = 2;
         tab[5][0] = 4;
-        tab[6][0] = 8;
+       // tab[6][0] = 8;
 
         tab[0][1] = 1;
         tab[0][2] = 2;
@@ -25,7 +25,7 @@ public class Main {
         tab[1][2] = 4;
 
         tab[2][1] = 5;
-        tab[2][2] = 6;
+       // tab[2][2] = 6;
 
         Tree tree = new Tree(tab);
 
@@ -43,7 +43,7 @@ public class Main {
         System.out.print("BFS ");
         tree.traversalBSF();
 
-        System.out.println();*/
+        System.out.println();
 
 /*        System.out.println((tree.searchBST(5).value));
         System.out.println(" - - - - - ");
@@ -68,7 +68,8 @@ public class Main {
         System.out.println("Array sorting with BST tree");
         System.out.println("------ ------");*/
 
-
+// sorting array with BST tree starts here
+/*
         // declare new array
         Integer[] myArray = {15, 16, 25, 10,8,5,3,4,2,1,0,6,9,7};
         // print unsorted array
@@ -101,6 +102,11 @@ public class Main {
         for (Integer integer : newtree.array) {
             System.out.print(integer + " ");
         }
+*/
+// sorting array with BST tree ends here
+
+
+
        /* System.out.println("Root value " + root.value);
         System.out.println("Root left " + root.left);
         System.out.println("Root right " + root.right);
